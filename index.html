@@ -6,30 +6,6 @@
     <meta name="viewport" content="width=device-width" />
     <title>Hello World Tech Studio</title>
 
-    <!--
-        	This email is an experimental proof-of-concept based on the
-            idea that the most common design patterns seen in email can
-            be placed in modular blocks and moved around to create
-            different designs.
-
-			The same principle is used to build the email templates in
-            MailChimp's Drag-and-Drop email editor.
-
-			This email is optimized for mobile email clients, and even
-            works relatively well in the Android Gmail App, which does
-            not support Media Queries, but does have limited mobile-
-            friendly functionality.
-
-			While this coding method is very flexible, it can be more
-            brittle than traditionally-coded emails, particularly in
-            Microsoft Outlook 2007-2010. Outlook-specific conditional
-            CSS is included to counteract the inconsistencies that
-            crop up.
-
-            For more information on HTML email design and development,
-            visit http://templates.mailchimp.com
-        -->
-
     <style type="text/css">
         /*////// RESET STYLES //////*/
 
@@ -315,16 +291,6 @@
             }
         }
     </style>
-    <!--
-        	Outlook Conditional CSS
-
-            These two style blocks target Outlook 2007 & 2010 specifically, forcing
-            columns into a single vertical stack as on mobile clients. This is
-            primarily done to avoid the 'page break bug' and is optional.
-
-            More information here:
-			http://templates.mailchimp.com/development/css/outlook-conditional-css
-        -->
     <!--[if mso 12]>
             <style type="text/css">
             	.flexibleContainer{display:block !important; width:100% !important;}
@@ -343,59 +309,30 @@
             <tr>
                 <td align="center" valign="top" id="bodyCell">
                     <!-- EMAIL CONTAINER // -->
-                    <!--
-                        	The table "emailBody" is the email's container.
-                            Its width can be set to 100% for a color band
-                            that spans the width of the page.
-                        -->
                     <table border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
 
-
                         <!-- MODULE ROW // -->
-                        <!--
-                            	To move or duplicate any of the design patterns
-                                in this email, simply move or copy the entire
-                                MODULE ROW section for each content block.
-                            -->
                         <tr>
                             <td align="center" valign="top">
                                 <!-- CENTERING TABLE // -->
-                                <!--
-                                    	The centering table keeps the content
-                                        tables centered in the emailBody table,
-                                        in case its width is set to 100%.
-                                    -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
                                         <td align="center" valign="top">
                                             <!-- FLEXIBLE CONTAINER // -->
-                                            <!--
-                                                	The flexible container has a set width
-                                                    that gets overridden by the media query.
-                                                    Most content tables within can then be
-                                                    given 100% widths.
-                                                -->
                                             <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                                                 <tr>
                                                     <td align="center" valign="top" width="600" class="flexibleContainerCell">
 
-
                                                         <!-- CONTENT TABLE // -->
-                                                        <!--
-                                                            	The content table is the first element
-                                                                that's entirely separate from the structural
-                                                                framework of the email.
-                                                            -->
                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                             <tr>
                                                                 <td valign="top" class="headerContent">
-                                                                    <a href="https://helloworldstudio.org"><img src="./assets/logo.png" width="100%"></a>
+                                                                    <a href="https://helloworldstudio.org"><img src="./assets/logo.png" width="600" class="flexibleImage" style="max-width:600px;"></a>
                                                                     <h1>February 2017</h1>
                                                                 </td>
                                                             </tr>
                                                         </table>
                                                         <!-- // CONTENT TABLE -->
-
 
                                                     </td>
                                                 </tr>
@@ -424,11 +361,6 @@
 
 
                                                         <!-- CONTENT TABLE // -->
-                                                        <!--
-                                                            	In multi-column content blocks, the
-                                                                content tables are given set widths
-                                                                and the flexibleContainer class.
-                                                            -->
                                                         <table align="Left" border="0" cellpadding="0" cellspacing="0" width="260" class="flexibleContainer">
                                                             <tr>
                                                                 <td valign="top" class="textContent">
@@ -1108,7 +1040,7 @@
                                                                     <table align="Left" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
                                                                         <tr>
                                                                             <td align="Left" valign="top" class="imageContent">
-                                                                                <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px;" />
+                                                                                <img src="http://i.imgur.com/9xftr6w.jpg" width="200" class="flexibleImage" style="max-width:200px;" />
                                                                             </td>
                                                                         </tr>
                                                                     </table>
@@ -1119,8 +1051,9 @@
                                                                     <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
                                                                         <tr>
                                                                             <td valign="top" class="textContent">
-                                                                                <h3>Right Column</h3>
-                                                                                <br /> A kitten or kitty is a juvenile domesticated cat. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
+                                                                                <h3>Instructor Q&A</h3>
+                                                                                <br />This month we interviewed one of our web development instructors, Michael Lefkowitz. Michael tells us about how he got started in web development and how it has changed his career.
+                                                                                <br /><br /><a href="https://helloworldstudio.org">Read the interview</a>
                                                                             </td>
                                                                         </tr>
                                                                     </table>
@@ -1141,134 +1074,6 @@
                             </td>
                         </tr>
                         <!-- // MODULE ROW -->
-
-
-                        <!-- MODULE ROW // -->
-                        <tr>
-                            <td align="center" valign="top">
-                                <!-- CENTERING TABLE // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td align="center" valign="top">
-                                            <!-- FLEXIBLE CONTAINER // -->
-                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                <tr>
-                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim">
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="nestedContainer">
-                                                            <tr>
-                                                                <td valign="top" class="nestedContainerCell">
-
-
-                                                                    <!-- CONTENT TABLE // -->
-                                                                    <table align="Right" border="0" cellpadding="0" cellspacing="0" width="200" class="flexibleContainer">
-                                                                        <tr>
-                                                                            <td align="Left" valign="top" class="imageContent">
-                                                                                <img src="http://placekitten.com/g/400/400" width="200" class="flexibleImage" style="max-width:200px;" />
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                    <!-- // CONTENT TABLE -->
-
-
-                                                                    <!-- CONTENT TABLE // -->
-                                                                    <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
-                                                                        <tr>
-                                                                            <td valign="top" class="textContent">
-                                                                                <h3>Left Column</h3>
-                                                                                <br /> A kitten or kitty is a juvenile domesticated cat. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                    <!-- // CONTENT TABLE -->
-
-
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- // FLEXIBLE CONTAINER -->
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- // CENTERING TABLE -->
-                            </td>
-                        </tr>
-                        <!-- // MODULE ROW -->
-
-
-                        <!-- MODULE ROW // -->
-                        <tr>
-                            <td align="center" valign="top">
-                                <!-- CENTERING TABLE // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td align="center" valign="top">
-                                            <!-- FLEXIBLE CONTAINER // -->
-                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
-                                                <tr>
-                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell bottomShim">
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="nestedContainer">
-                                                            <tr>
-                                                                <td valign="top" class="nestedContainerCell">
-
-
-                                                                    <!-- CONTENT TABLE // -->
-                                                                    <table align="Left" border="0" cellpadding="0" cellspacing="0" width="160" class="flexibleContainer">
-                                                                        <tr>
-                                                                            <td align="center" valign="top" class="bottomShim">
-                                                                                <table border="0" cellpadding="0" cellspacing="0" width="160" class="emailCalendar">
-                                                                                    <tr>
-                                                                                        <td align="center" valign="top" style="padding:5px;">
-                                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                                                <tr>
-                                                                                                    <td align="center" valign="top" class="emailCalendarMonth">
-                                                                                                        September
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td align="center" valign="top" class="emailCalendarDay">
-                                                                                                        16
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                    <!-- // CONTENT TABLE -->
-
-
-                                                                    <!-- CONTENT TABLE // -->
-                                                                    <table align="Right" border="0" cellpadding="0" cellspacing="0" width="320" class="flexibleContainer">
-                                                                        <tr>
-                                                                            <td valign="top" class="textContent">
-                                                                                <h3>Right Column</h3>
-                                                                                <br /> A kitten or kitty is a juvenile domesticated cat. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                    <!-- // CONTENT TABLE -->
-
-
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- // FLEXIBLE CONTAINER -->
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- // CENTERING TABLE -->
-                            </td>
-                        </tr>
-                        <!-- // MODULE ROW -->
-
 
                         <!-- MODULE ROW // -->
                         <tr>
