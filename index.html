@@ -7,289 +7,305 @@
     <title>Hello World Tech Studio</title>
 
     <style type="text/css">
-        /*////// RESET STYLES //////*/
+    #outlook a{
+    			padding:0;
+    		}
+    		body{
+    			width:100% !important;
+    			-webkit-text-size-adjust:none;
+    			-ms-text-size-adjust:none;
+    			text-rendering:optimizeLegibility;
+    			-webkit-font-smoothing:antialiased;
+    			margin:0;
+    			padding:0;
+    		}
+    		img{
+    			border:none;
+    			outline:none;
+    			display:block;
+    		}
+    		.backgroundTable{
+    			height:100% !important;
+    			margin:0;
+    			padding:0;
+    			width:100% !important;
+    			table-layout:fixed;
+    		}
+    		.ExternalClass{
+    			width:100%;
+    		}
+    		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
+    			line-height:100%;
+    		}
+    		table td{
+    			border-collapse:collapse;
+    		}
+    		span.yshortcuts{
+    			color:#000;
+    			background-color:none;
+    			border:none;
+    		}
+    		span.yshortcuts:hover,span.yshortcuts:active,span.yshortcuts:focus{
+    			color:#000;
+    			background-color:none;
+    			border:none;
+    		}
+    		a,a img{
+    			transition:all .25s;
+    		}
+    		a:hover{
+    			opacity:.6;
+    		}
+    		a:hover img{
+    			opacity:.6;
+    		}
+    		#gmailfix{
+    			display:none;
+    		}
+    		.bgTable{
+    			background:#f5f5f5;
+    		}
+    		.h1,.h1 a:link,.h1 a:visited{
+    			color:#444444;
+    			font-family:Avenir, sans-serif;
+    			line-height:130%;
+    			font-size:24px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.h2,.h2 a:link,.h2 a:visited{
+    			color:#444444;
+    			font-family:Avenir, sans-serif;
+    			line-height:130%;
+    			font-size:18px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.h3,.h3 a:link,.h3 a:visited{
+    			color:#444444;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:15px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.h4,.h4 a:link,.h4 a:visited{
+    			color:#ffffff;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:12px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.h5,.h5 a:link,.h5 a:visited{
+    			color:#333333;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:12px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.nav,.nav a:link,.nav a:visited{
+    			color:#000000;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:12px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.preHeader,.preHeader a:link,preHeader a:visited{
+    			color:#555555;
+    			font-family:Avenir, sans-serif;
+    			font-size:10px;
+    			line-height:120%;
+    		}
+    		.preHeader a:link,preHeader a:visited{
+    			text-decoration:underline;
+    		}
+    		.body{
+    			color:#636363;
+    			font-family:Avenir, sans-serif;
+    			font-size:15px;
+    			line-height:150%;
+    		}
+    		.body a:link,.body a:visited{
+    			color:#f8b000;
+    			text-decoration:none;
+    			font-weight:bold;
+    		}
+    		.button{
+    			background:#faaf1f;
+    		}
+    		.buttontext,.buttontext a:link,.buttontext a:visited{
+    			color:#ffffff;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:16px;
+    			padding:0px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.button2{
+    			background:#f3f3f3;
+    			border:1px solid #dddddd;
+    			-webkit-border-radius:8px;
+    			border-radius:8px;
+    		}
+    		.buttontext2,.buttontext2 a:link,.buttontext2 a:visited{
+    			color:#555555;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:13px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.footer{
+    			color:#444444;
+    			font-family:Avenir, sans-serif;
+    			font-size:11px;
+    			line-height:150%;
+    		}
+    		.footer a:link,.footer a:visited{
+    			color:#444444;
+    			text-decoration:underline;
+    		}
+    		.wrapper{
+    			width:600px;
+    		}
+    		.logo{
+    			width:600px;
+    		}
+    		.logo2{
+    			width:163px;
+    		}
+    		.fullTable{
+    			width:570px;
+    		}
+    		.innerTable{
+    			width:570px;
+    		}
+    		.smallspacer{
+    			height:10px;
+    			font-size:10px;
+    			line-height:10px;
+    		}
+    	@media only screen and (max-width: 480px){
+    		table[class=wrapper]{
+    			width:310px !important;
+    		}
 
-        body,
-        #bodyTable,
-        #bodyCell {
-            height: 100% !important;
-            margin: 0;
-            padding: 0;
-            width: 100% !important;
-        }
+    }	@media only screen and (max-width: 480px){
+    		table[class=fullTable],td[class=fullTable]{
+    			width:290px !important;
+    		}
 
-        table {
-            border-collapse: collapse;
-        }
+    }	@media only screen and (max-width: 480px){
+    		table[class=innerTable],td[class=innerTable]{
+    			width:250px !important;
+    		}
 
-        img,
-        a img {
-            border: 0;
-            outline: none;
-            text-decoration: none;
-        }
+    }	@media only screen and (max-width: 480px){
+    		td[class=fleximage] img{
+    			height:auto !important;
+    			width:100% !important;
+    		}
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0;
-            padding: 0;
-        }
+    }	@media only screen and (max-width: 480px){
+    		table[class=button],td[class=button]{
+    			width:290px !important;
+    		}
 
-        p {
-            margin: 1em 0;
-        }
-        /*////// CLIENT-SPECIFIC STYLES //////*/
+    }	@media only screen and (max-width: 480px){
+    		td[class=buttontext] a:link{
+    			font-size:22px !important;
+    		}
 
-        .ReadMsgBody {
-            width: 100%;
-        }
+    }	@media only screen and (max-width: 480px){
+    		td[class=buttontext2] a:link{
+    			font-size:22px !important;
+    		}
 
-        .ExternalClass {
-            width: 100%;
-        }
-        /* Force Hotmail/Outlook.com to display emails at full width. */
+    }	@media only screen and (max-width: 480px){
+    		td[class=body],td[class=body] a:link,td[class=body] a:visited{
+    			font-size:16px !important;
+    		}
 
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-            line-height: 100%;
-        }
-        /* Force Hotmail/Outlook.com to display line heights normally. */
+    }	@media only screen and (max-width: 480px){
+    		td[class=h1],td[class=h1] a:link,td[class=h1] a:visited{
+    			font-size:20px !important;
+    		}
 
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        /* Remove spacing between tables in Outlook 2007 and up. */
+    }	@media only screen and (max-width: 480px){
+    		td[class=h2],td[class=h2] a:link,td[class=h2] a:visited{
+    			font-size:20px !important;
+    		}
 
-        #outlook a {
-            padding: 0;
-        }
-        /* Force Outlook 2007 and up to provide a "view in browser" message. */
+    }	@media only screen and (max-width: 480px){
+    		td[class=h3],td[class=h3] a:link,td[class=h3] a:visited{
+    			font-size:18px !important;
+    		}
 
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-        /* Force IE to smoothly render resized images. */
+    }	@media only screen and (max-width: 480px){
+    		table[class=hide],img[class=hide],td[class=hide]{
+    			display:none !important;
+    			max-height:0px;
+    			overflow:hidden;
+    		}
 
-        body,
-        table,
-        td,
-        p,
-        a,
-        li,
-        blockquote {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-        /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
-        /*////// FRAMEWORK STYLES //////*/
+    }	@media only screen and (max-width: 480px){
+    		td[class=column]{
+    			display:block;
+    			float:none !important;
+    		}
 
-        .flexibleContainerCell {
-            padding-top: 20px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
+    }	@media only screen and (max-width: 480px){
+    		table[class=mobile100]{
+    			float:none !important;
+    			width:100% !important;
+    		}
 
-        .flexibleImage {
-            height: auto;
-        }
+    }	@media only screen and (max-width: 480px){
+    		.logo{
+    			width:163px !important;
+    		}
 
-        .bottomShim {
-            padding-bottom: 20px;
-        }
+    }	@media only screen and (max-width: 480px){
+    		.logo2{
+    			width:163px !important;
+    		}
 
-        .imageContent,
-        .imageContentLast {
-            padding-bottom: 20px;
-        }
-
-        .nestedContainerCell {
-            padding-top: 20px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        /*////// GENERAL STYLES //////*/
-
-        body,
-        #bodyTable {
-            background-color: #F5F5F5;
-        }
-
-        #bodyCell {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        #emailBody {
-            background-color: #FFFFFF;
-            border: 1px solid #DDDDDD;
-            border-collapse: separate;
-            border-radius: 4px;
-        }
-
-        h1 {
-            color: #202020;
-            font-family: Helvetica;
-            font-size: 28px;
-            line-height: 125%;
-        }
-
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #202020;
-            font-family: Helvetica;
-            font-size: 20px;
-            line-height: 125%;
-            text-align: left;
-        }
-
-        .headerContent {
-            color: #404040;
-            font-family: Helvetica;
-            font-size: 16px;
-            line-height: 125%;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-
-        .textContent,
-        .textContentLast {
-            color: #404040;
-            font-family: Helvetica;
-            font-size: 16px;
-            line-height: 125%;
-            text-align: left;
-            padding-bottom: 20px;
-        }
-
-        .textContent a,
-        .textContentLast a {
-            color: #2C9AB7;
-            text-decoration: underline;
-        }
-
-        .nestedContainer {
-            background-color: #E5E5E5;
-            border: 1px solid #CCCCCC;
-        }
-
-        .emailButton {
-            background-color: #2C9AB7;
-            border-collapse: separate;
-            border-radius: 4px;
-        }
-
-        .buttonContent {
-            color: #FFFFFF;
-            font-family: Helvetica;
-            font-size: 18px;
-            font-weight: bold;
-            line-height: 100%;
-            padding: 15px;
-            text-align: center;
-        }
-
-        .buttonContent a {
-            color: #FFFFFF;
-            display: block;
-            text-decoration: none;
-        }
-
-        .emailCalendar {
-            background-color: #FFFFFF;
-            border: 1px solid #CCCCCC;
-        }
-
-        .emailCalendarMonth {
-            background-color: #2C9AB7;
-            color: #FFFFFF;
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            font-weight: bold;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            text-align: center;
-        }
-
-        .emailCalendarDay {
-            color: #2C9AB7;
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 60px;
-            font-weight: bold;
-            line-height: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            text-align: center;
-        }
-        /*////// MOBILE STYLES //////*/
-
-        @media only screen and (max-width: 480px) {
-            /*////// CLIENT-SPECIFIC STYLES //////*/
-            body {
-                width: 100% !important;
-                min-width: 100% !important;
-            }
-            /* Force iOS Mail to render the email at full width. */
-            /*////// FRAMEWORK STYLES //////*/
-            /*
-					CSS selectors are written in attribute
-					selector format to prevent Yahoo Mail
-					from rendering media query styles on
-					desktop.
-				*/
-            table[id="emailBody"],
-            table[class="flexibleContainer"] {
-                width: 100% !important;
-            }
-            /*
-					The following style rule makes any
-					image classed with 'flexibleImage'
-					fluid when the query activates.
-					Make sure you add an inline max-width
-					to those images to prevent them
-					from blowing out.
-				*/
-            img[class="flexibleImage"] {
-                height: auto !important;
-                width: 100% !important;
-            }
-            /*
-					Make buttons in the email span the
-					full width of their container, allowing
-					for left- or right-handed ease of use.
-				*/
-            table[class="emailButton"] {
-                width: 100% !important;
-            }
-            td[class="buttonContent"] {
-                padding: 0 !important;
-            }
-            td[class="buttonContent"] a {
-                padding: 15px !important;
-            }
-            td[class="textContentLast"],
-            td[class="imageContentLast"] {
-                padding-top: 20px !important;
-            }
-            /*////// GENERAL STYLES //////*/
-            td[id="bodyCell"] {
-                padding-top: 10px !important;
-                padding-Right: 10px !important;
-                padding-Left: 10px !important;
-            }
-        }
+    }		.button1{
+    			background:#4b7ed2;
+    			-webkit-border-radius:8px;
+    			border-radius:8px;
+    			-webkit-box-shadow:0 5px 0 0 #30466a;
+    			box-shadow:0 5px 0 0 #30466a;
+    		}
+    		.h1b,.h1b a:link,.h1b a:visited{
+    			color:#ffffff;
+    			font-family:Avenir, sans-serif;
+    			line-height:100%;
+    			font-size:26px;
+    			font-weight:normal;
+    			text-decoration:none;
+    		}
+    		.body2{
+    			color:#ffffff;
+    			font-family:Avenir, sans-serif;
+    			font-size:15px;
+    			line-height:150%;
+    		}
+    		.body2 a:link,.body2 a:visited{
+    			color:#ffffff;
+    			text-decoration:none;
+    			font-weight:bold;
+    		}
+    		.colored{
+    			background:#94d500;
+    		}
+    		ul,li{
+    			text-align:left !important;
+    		}
     </style>
     <!--[if mso 12]>
             <style type="text/css">
@@ -303,55 +319,301 @@
         <![endif]-->
 </head>
 
-<body>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: none;-ms-text-size-adjust: none;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;margin: 0;padding: 0;width: 100% !important;">
     <center>
-        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+        <table class="backgroundTable" border="0" cellspacing="0" cellpadding="0" style="margin: 0;padding: 0;table-layout: fixed;height: 100% !important;width: 100% !important;">
             <tr>
-                <td align="center" valign="top" id="bodyCell">
-                    <!-- EMAIL CONTAINER // -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
-
-                        <!-- MODULE ROW // -->
+                <td align="center" valign="top" bgcolor="#ffffff" class="bgTable" style="border-collapse: collapse;background: #f5f5f5;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                            <td align="center" valign="top">
-                                <!-- CENTERING TABLE // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <td align="center" style="border-collapse: collapse;">
+                                <table border="0" cellspacing="0" cellpadding="9" class="wrapper" style="width: 600px;">
                                     <tr>
-                                        <td align="center" valign="top">
-                                            <!-- FLEXIBLE CONTAINER // -->
-                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                        <td align="center" class="preHeader" style="border-collapse: collapse;color: #555555;font-family: Avenir, sans-serif;font-size: 10px;line-height: 120%;">Join us for a one-week intensive session this summer in downtown Austin. <a href="#" style="transition: all .25s;color: #555555;font-family: Avenir, sans-serif;font-size: 10px;line-height: 120%;text-decoration: underline;">View Online</a> or <a href="#" style="transition: all .25s;color: #555555;font-family: Avenir, sans-serif;font-size: 10px;line-height: 120%;text-decoration: underline;">Forward</a>                                            to a friend.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td align="center" bgcolor="#f5f5f5" style="border-collapse: collapse;">
+                                <table border="0" cellspacing="0" cellpadding="0" class="wrapper" style="width: 600px;">
+                                    <tr>
+                                        <td align="center" valign="middle" bgcolor="#ffffff" class="column" style="border-collapse: collapse;">
+                                            <table border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
-                                                    <td align="center" valign="top" width="600" class="flexibleContainerCell">
-
-                                                        <!-- CONTENT TABLE // -->
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                            <tr>
-                                                                <td valign="top" class="headerContent">
-                                                                    <a href="https://helloworldstudio.org"><img src="./assets/logo.png" width="600" class="flexibleImage" style="max-width:600px;"></a>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                        <!-- // CONTENT TABLE -->
-
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td align="center" style="border-collapse: collapse;">
+                                                        <a href="http://www.helloworldstudio.org/summer-programs" target="_blank" style="transition: all .25s;">
+                                                            <img align="none" height="70" src="./assets/logo.png" style="width: 200px;height: 94px;margin: 0px;border: none;outline: none;display: block;transition: all .25s;"
+                                                                width="200"></a>
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <!-- // FLEXIBLE CONTAINER -->
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- // CENTERING TABLE -->
                             </td>
                         </tr>
-                        <!-- // MODULE ROW -->
-
-
                     </table>
-                    <!-- // EMAIL CONTAINER -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td align="center" valign="top" style="border-collapse: collapse;">
+                                <table border="0" cellspacing="0" cellpadding="0" class="wrapper" mc:repeatable="repeat_1" mc:variant="Header Image" mc:repeatindex="0" style="width: 600px;">
+                                    <tr>
+                                        <td align="center" bgcolor="#ffffff" style="border-collapse: collapse;">
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" class="fleximage" style="border-collapse: collapse;">
+                                                        <a href="http://www.helloworldstudio.org/summer-programs" target="_blank" style="transition: all .25s;">
+                                                            <img align="none" height="250" src="./assets/banner.png" style="width: 600px;height: 250px;margin: 0px;border: none;outline: none;display: block;transition: all .25s;"
+                                                                width="600"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0" class="wrapper" mc:repeatable="repeat_1" mc:variant="Text Section" mc:repeatindex="1" style="width: 600px;">
+                                    <tr>
+                                        <td align="center" valign="top" bgcolor="#ffffff" class="column" style="border-collapse: collapse;">
+                                            <table border="0" cellspacing="0" cellpadding="0" class="fullTable" style="width: 570px;">
+                                                <tr>
+                                                    <td align="center" style="border-collapse: collapse;">
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td align="center" class="body" style="border-collapse: collapse;color: #636363;font-family: Avenir, sans-serif;font-size: 15px;line-height: 150%;">
+                                                                  <span class="h2" style="color: #444444;font-family: Avenir, sans-serif;line-height: 130%;font-size: 18px;font-weight: normal;text-decoration: none;"><strong>Save 10% (code: TBD) by March 20th<br />Additional $75 off for each qualified referral</strong></span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="10" cellspacing="0" class="button" style="background: #56C8D9;">
+                                                            <tr>
+                                                                <td align="center" style="border-collapse: collapse;">&nbsp;</td>
+                                                                <td align="center" style="border-collapse: collapse;">
+                                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td align="center" class="buttontext" style="border-collapse: collapse;color: #ffffff;font-family: Avenir, sans-serif;line-height: 100%;font-size: 16px;padding: 0px;font-weight: normal;text-decoration: none;"><a href="http://www.helloworldstudio.org/summer-programs" target="_blank" style="transition: all .25s;color: #ffffff;font-family: Avenir, sans-serif;line-height: 100%;font-size: 16px;padding: 0px;font-weight: normal;text-decoration: none;">ENROLL NOW</a></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td align="center" style="border-collapse: collapse;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td align="center" class="body" style="border-collapse: collapse;color: #636363;font-family: Avenir, sans-serif;font-size: 15px;line-height: 150%;">When our dream team of software engineers, data scientists, and pedagogical leaders come together to plan summer courses, we’re planning for success in the most influential and cutting-edge careers thirty years from now. Our number one goal is to build students confidence in technology and engineering subjects, and a close second is to build rigorous computational thinking capabilities that can be translated across various programming languages.<br /><br />
+Sessions take place at innovation tech hubs across Austin, including Google, Capital Factory, and Hack Reactor. Save your student’s seat before we open up the program to those outside the Hello World community!
+
+</td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- <div mc:hideable="hideable_repeat_1_1" mchideable="hideable_repeat_1_1">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                                </tr>
+                                                            </table>
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                                </tr>
+                                                            </table>
+                                                            <table border="0" cellpadding="10" cellspacing="0" class="button" style="background: #56C8D9;">
+                                                                <tr>
+                                                                    <td align="center" style="border-collapse: collapse;">&nbsp;</td>
+                                                                    <td align="center" style="border-collapse: collapse;">
+                                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td align="center" class="buttontext" style="border-collapse: collapse;color: #ffffff;font-family: Avenir, sans-serif;line-height: 100%;font-size: 16px;padding: 0px;font-weight: normal;text-decoration: none;"><a href="http://www.helloworldstudio.org/summer-programs" target="_blank" style="transition: all .25s;color: #ffffff;font-family: Avenir, sans-serif;line-height: 100%;font-size: 16px;padding: 0px;font-weight: normal;text-decoration: none;">ENROLL NOW</a></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td align="center" style="border-collapse: collapse;">&nbsp;</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div> -->
+
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0" class="wrapper" mc:repeatable="repeat_1" mc:variant="Header Image" mc:repeatindex="2" style="width: 600px;">
+                                    <tr>
+                                        <td align="center" bgcolor="#ffffff" style="border-collapse: collapse;">
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <!-- <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" class="fleximage" style="border-collapse: collapse;">
+                                                      <span class="h2" style="color: #444444;font-family: Avenir, sans-serif;line-height: 130%;font-size: 18px;font-weight: normal;text-decoration: none;"><strong>Save 10% (code: TBD) by March 20th<br />Additional $75 off for each qualified referral</strong></span>
+                                                    </td>
+                                                </tr>
+                                            </table> -->
+                                            <!-- <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table> -->
+                                            <!-- <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/8e663c93-d4c4-4121-95e7-73dcdcc67e02.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table> -->
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="wrapper" border="0" cellspacing="0" cellpadding="0" style="width: 600px;">
+                                    <tr>
+                                        <td align="center" bgcolor="#f5f5f5" style="border-collapse: collapse;">
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td align="center" class="column" style="border-collapse: collapse;">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td align="center" style="border-collapse: collapse;">
+                                                                    <a href="https://www.facebook.com/helloworldstudio" style="transition: all .25s;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/e1322b55-a0f4-4246-b530-3a0790a4c361.png" alt="" width="30" style="border: none;outline: none;display: block;transition: all .25s;"></a>
+                                                                </td>
+                                                                <td align="center" style="border-collapse: collapse;">
+                                                                    <a href="https://twitter.com/hwtechstudio" style="transition: all .25s;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/94d22bf5-cc89-43f6-a4d8-8567c4e81d9d.png" alt="" width="30" style="border: none;outline: none;display: block;transition: all .25s;"></a>
+                                                                </td>
+                                                                <td align="center" style="border-collapse: collapse;">
+                                                                    <a href="https://www.instagram.com/helloworldstudio/" style="transition: all .25s;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/6b969394-7c4c-45c1-9079-7e98dddcbbb2.png" alt="" width="30" style="border: none;outline: none;display: block;transition: all .25s;"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellpadding="0" cellspacing="0" class="fullTable" style="width: 570px;">
+                                                <tr>
+                                                    <td align="center" valign="top" class="column" style="border-collapse: collapse;">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0" class="mobile100">
+                                                            <tr>
+                                                                <td align="center" class="footer" style="border-collapse: collapse;color: #444444;font-family: Avenir, sans-serif;font-size: 11px;line-height: 150%;">*10% Hello World Friends and Family discount expires March 20th 12PM CST<br>
+                                                                    <br> You are receiving this email because you have expressed interest in Hello World Tech Studio.<br> Hello World Tech Studio 700 Congress Avenue, Austin, TX 78704 USA
+                                                                    <br> 512.555.5555 <br>
+                                                                    <br>
+                                                                    <a href="#" style="transition: all .25s;color: #444444;text-decoration: underline;">Unsubscribe</a>                                                                    | <a href="#" style="transition: all .25s;color: #444444;text-decoration: underline;">Update your profile</a> | <a href="#" style="transition: all .25s;color: #444444;text-decoration: underline;">Forward to a friend</a><br>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="smallspacer" style="border-collapse: collapse;height: 10px;font-size: 10px;line-height: 10px;"><img src="https://gallery.mailchimp.com/ec23b4a39af05919d6bad0453/images/64b43efb-ee4d-45ba-bd34-12eaafe397d7.gif" alt="" width="1" height="1" style="border: none;outline: none;display: block;"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
+
+        <div id="gmailfix" style="white-space: nowrap;font: 15px courier;color: white;display: none;">
+            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+
     </center>
 </body>
-
-</html>
